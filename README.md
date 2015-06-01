@@ -50,8 +50,6 @@ One of the main hurdles we found so far was to
 
 Since we started I have been keeping a "diary" of what is going on for future reference. I want to try to document the process to hep any other porting efforts.
 
-### 11th May
-
 ### 12th May
 
 Today we finally got a texture rendering and using OpenGL 4.4 via OpenTK.
@@ -66,12 +64,13 @@ Today we are working on other default shaders rendering and input.
 Today I am the only one working on the port... boo. I had to create a special project to use some hardware related jar and that brought me into the fun realm of consuming a jar from C#.
 To do that first I created an Android Java Binding Library following the steps [here](https://developer.xamarin.com/guides/android/advanced_topics/java_integration_overview/binding_a_java_library_(.jar)/) I was able to build this however it wasn't working as reported [here](https://forums.xamarin.com/discussion/42051/issues-binding-jar-file-a-few-classes-not-available#latest) 
 
-### 15th May
+### 15th May - 31st May
 
 ... forgot to document until now (sorry :( )
 we made progress on the library binding, in the end we wrote the binding code by hand :/ 
+Can't remember what other changes happened. Re-booting the diary
 
-## 1st June 
+### 1st June - input clean up
 
 Cleaning up the input interface, the question here is should it go on the android branch or on the master? it seems like the android branch would be a better place, as it will.. ideally in the future be merged into the main
 
