@@ -75,7 +75,7 @@ Can't remember what other changes happened. Re-booting the diary
 Cleaning up the input interface, the question here is should it go on the android branch or on the master? it seems like the android branch would be a better place, as it will.. ideally in the future be merged into the main
 
 Maybe knowing how things depend on each other would help
-![dependecygraph](https://cloud.githubusercontent.com/assets/3103/7919719/305fa5da-0892-11e5-9679-9c5f94602037.jpg)
+![dependecygraph](http://i.imgur.com/SPZYwfx.jpg?1)
 
 # Summary
 
