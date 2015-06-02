@@ -77,6 +77,15 @@ Cleaning up the input interface, the question here is should it go on the androi
 Maybe knowing how things depend on each other would help
 ![dependecygraph](http://i.imgur.com/SPZYwfx.jpg?1)
 
+### 2nd June -  Input implementation
+
+So after a refactor I noticed there were several not implemented methods, noticed a pronounced lag on the inputs, investigating...
+At the same time trying to figure 
+
+a)  Does Xamarin android support [Fast Memeber]
+b) Will Binary serialization just work ( it seems like it should)
+c) how to make the controller/gamepad work via USB
+
 # Summary
 
 We are porting Duality runtime to Android, all the code is available on this [user][1] on the respective android-port branch of each repository. If you are interested in this and want to help or have questions, let us know.
