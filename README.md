@@ -86,6 +86,13 @@ a)  Does Xamarin android support [Fast Memeber]
 b) Will Binary serialization just work ( it seems like it should)
 c) how to make the controller/gamepad work via USB
 
+### 2nd June - Answers to some questions
+
+We were wondering 
+
+* Would Binary serialization work? so I created a scene, serialized it to Binary and tried to run it on the android device, it worked :D 
+* Does Reflection work on android? I tried this as well and I was able to reflect on a type and create it.
+
 # Summary
 
 We are porting Duality runtime to Android, all the code is available on this [user][1] on the respective android-port branch of each repository. If you are interested in this and want to help or have questions, let us know.
