@@ -86,12 +86,23 @@ a)  Does Xamarin android support [Fast Memeber]
 b) Will Binary serialization just work ( it seems like it should)
 c) how to make the controller/gamepad work via USB
 
-### 2nd June - Answers to some questions
+### 3rd June - Answers to some questions
 
 We were wondering 
 
 * Would Binary serialization work? so I created a scene, serialized it to Binary and tried to run it on the android device, it worked :D 
-* Does Reflection work on android? I tried this as well and I was able to reflect on a type and create it.
+* Does Reflection work on android? I tried this as well and I was able to reflect on a type and create it. Also spiked FastMember support and it works
+*  Started Fmod integration
+
+### 4th June
+
+* Working on the Fmod integration: 
+   * Created binfing library with no issues
+   * Adding the *.so (wasn't sure what was the architecture of the target hardware) to find out you can run 
+                 ` adb shell cat /proc/cpuinfo`
+
+   * If adb gives you errors about too many connected devices, make sure no emulators are running :D
+   
 
 # Summary
 
