@@ -102,6 +102,8 @@ We were wondering
                  ` adb shell cat /proc/cpuinfo`
 
    * If adb gives you errors about too many connected devices, make sure no emulators are running :D
+   * in the end the jar file was not necesary, however I used one of the *.so, and you needed two :( the second one was on the **fmoddesignerapi** 
+   * for the moment the project is loading from a directory I copied to the device and it's hardcoded,, loading from assets doesn't work on the ways I have tried
    
 
 # Summary
