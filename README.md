@@ -105,6 +105,15 @@ We were wondering
    * in the end the jar file was not necesary, however I used one of the *.so, and you needed two :( the second one was on the **fmoddesignerapi** 
    * for the moment the project is loading from a directory I copied to the device and it's hardcoded,, loading from assets doesn't work on the ways I have tried
    
+### 5th June
+
+So the fastest way to deal with the asset problem has been to save the file to the device on init/load, not loving this (suggestions welcome) but it does work.
+
+
+Now I am working on making [DualityScripts](https://github.com/BraveSirAndrew/DualityScripting) also be able to compile the C# and  F# scripts also target android.
+Initially I was wondering if there was a way to target android with F# Compiler Services, but not the case, so I am just going to go ahead and create an android project that will be edited programatically to add all the script files and also edit the references and then build with msbuild :/
+
+
 
 # Summary
 
