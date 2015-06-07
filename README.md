@@ -113,7 +113,28 @@ So the fastest way to deal with the asset problem has been to save the file to t
 Now I am working on making [DualityScripts](https://github.com/BraveSirAndrew/DualityScripting) also be able to compile the C# and  F# scripts also target android.
 Initially I was wondering if there was a way to target android with F# Compiler Services, but not the case, so I am just going to go ahead and create an android project that will be edited programatically to add all the script files and also edit the references and then build with msbuild :/
 
+### 6th June
 
+Today I spent some time  fixing a bug on the scripting plugin project, it was important to fix it because I needed to make sure that we had a good way to build the scripts that live in `Data/Scripts`the tricky thing here is that we need to be able to build for multiple targets in different conditions. 
+So today I fixed that bug and went over what was the current state of how we build al these and determined that I can use an fsx file to build this but will need to rely on the existance of an android project file per language to produce the assemblies, so it all points to refactor the current script so that we use FAKE so that there is clean control over the targets
+
+### 7th June
+
+As I was saying yesterday this build script needs to work on the following environments
+
+* teamcity build 
+   *  target PC on release more
+   *  target Android on release mode
+* local build
+   *  target Android on any mode
+   
+The hard thing about building these is that these DualityScripts are resources (ie xml files) that contain code and have Duality related dependencies
+
+I know this is not stricly part of the port but it is part of a set of problems that present itself during this process and I think it is important to make sure people working on the project can work as effectively as possible with as little disruption possible
+
+* ~~created the empty C# and F# projects~~
+* disasembled current script into Fake targets
+* 
 
 # Summary
 
