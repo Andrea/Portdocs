@@ -133,8 +133,12 @@ The hard thing about building these is that these DualityScripts are resources (
 I know this is not stricly part of the port but it is part of a set of problems that present itself during this process and I think it is important to make sure people working on the project can work as effectively as possible with as little disruption possible
 
 * ~~created the empty C# and F# projects~~
-* disasembled current script into Fake targets
-* 
+* ~~disasembled current script into Fake targets~~ this is a little harder than it might appear at first because of paths also I am hoping the build fails when something goes wrong :D
+
+### 8th June
+
+Checking paths and verifyign the build fails as it should 
+
 
 # Summary
 
