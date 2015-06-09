@@ -138,6 +138,12 @@ I know this is not stricly part of the port but it is part of a set of problems 
 ### 8th June
 
 Checking paths and verifyign the build fails as it should 
+(I also had to fix other unrelated issues )
+
+## 9th of June
+
+* Add build script for openTK to Teamcity (builds and pack and push to myget)
+
 
 
 # Summary
