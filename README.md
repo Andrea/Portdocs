@@ -152,7 +152,11 @@ Build info
 ## 10th june
 
 * Package openTK into a nuget package
-
+* Create other builds some gotchas:
+    * Component model .exe :(
+    * When using FAKE and TC you ll need a TEAMCITY_VERSION env variable
+    * For nuget packages targeting android use  `target="lib\MonoAndroid`
+    * don't mess up your paths :(
 
 # Summary
 
