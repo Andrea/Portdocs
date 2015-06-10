@@ -146,7 +146,7 @@ Checking paths and verifyign the build fails as it should
 
 Build info
 - for running xamamrin stuff on a build server via the command line you will need a business license
-- you need to run a tool called `xamarin-componenet.exe login <your emall address>` so that the server knows your license info
+- you need to run a tool called `xamarin-componenet.exe login <your emall address>` so that the server knows your license info (found this on the [Greg Shackles talk about CI for xamarin](https://www.youtube.com/watch?v=Awl4vGo7Yj0))
 - nuget can be a PITA , but we all knew that
 
 ## 10th june
