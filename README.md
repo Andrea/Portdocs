@@ -144,6 +144,14 @@ Checking paths and verifyign the build fails as it should
 
 * Add build script for openTK to Teamcity (builds and pack and push to myget)
 
+Build info
+- for running xamamrin stuff on a build server via the command line you will need a business license
+- you need to run a tool called `xamarin-componenet.exe login <your emall address>` so that the server knows your license info
+- nuget can be a PITA , but we all knew that
+
+## 10th june
+
+* Package openTK into a nuget package
 
 
 # Summary
