@@ -158,6 +158,12 @@ Build info
     * For nuget packages targeting android use  `target="lib\MonoAndroid`
     * don't mess up your paths :(
 
+## 11th june
+
+After some investigation, fixed the issues with package creation, just to discover ~~issues with MyGet too :|~~ my idiocy as I aparently managed to edit out a part of the url :( (uses package at the end when pushing the package)
+Creating farseer package now
+
+
 # Summary
 
 We are porting Duality runtime to Android, all the code is available on this [user][1] on the respective android-port branch of each repository. If you are interested in this and want to help or have questions, let us know.
