@@ -161,7 +161,14 @@ Build info
 ## 11th june
 
 After some investigation, fixed the issues with package creation, just to discover ~~issues with MyGet too :|~~ my idiocy as I aparently managed to edit out a part of the url :( (uses package at the end when pushing the package)
-Creating farseer package now
+Creating farseer package now, also created Duality package 
+
+
+## 12th june
+
+- Created the Fast member build and package
+- Scrapped? copied? the teamcity server with a tool called [Htttrack](https://www.httrack.com/) so that I can show current status in http://batbuild.github.io/PortStatus/ 
+Need to come up with a plan for the rest of the port.     
 
 
 # Summary
