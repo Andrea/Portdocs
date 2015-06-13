@@ -173,6 +173,27 @@ Need to come up with a plan for the rest of the port.
 ## 13th june
 
 Starting attempt to compile game project (code name Honourbound and this is the name I ll use here to refer to it)
+Need to make the following available as android libs:
+
+* DisciplineOAk
+* Flow
+* spine-runtime
+
+Maybe
+* Exceptionles
+* scriptingPlugin
+* protobuf-net
+* lz4
+* OgvVideo Player
+
+Some notes tht I forgot to note before:
+- VS + resharper will show code as failing or missing references when in reality everything is fine, the compiler will tell you the truth
+- Sometimes something will not run on VS and will run and deploy fine on XS
+- Nuget packages do work on android projects however they need to have `lib\MonoAndroid` as their target.
+- On android, no resolution changing code
+- On android, no editor or debugging support code 
+- 
+- Most of the problems I had while 
 
 # Summary
 
