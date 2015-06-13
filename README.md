@@ -167,9 +167,12 @@ Creating farseer package now, also created Duality package
 ## 12th june
 
 - Created the Fast member build and package
-- Scrapped? copied? the teamcity server with a tool called [Htttrack](https://www.httrack.com/) so that I can show current status in http://batbuild.github.io/PortStatus/ 
+- Scrapped? copied? the teamcity server with a tool called [Htttrack](https://www.httrack.com/) so that I can show current status in http://batbuild.github.io/PortStatus/  not happy with the results
 Need to come up with a plan for the rest of the port.     
 
+## 13th june
+
+Starting attempt to compile game project (code name Honourbound and this is the name I ll use here to refer to it)
 
 # Summary
 
