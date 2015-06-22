@@ -201,7 +201,17 @@ So I ported the following:
 * Spine runtime
 * Mercury particle engine (cross fingers it works :D)
 
+## 20th June
 
+Made the necesary classes available from Duality Scripting for Android and made the build availalbe
+
+## 22nd June
+
+Made changes to OgvVideo player so that it would be availabe from Android (ie compiles, but wont play video, for sure, bu tI gueess we ll get there)
+- build server public
+- Honourbound builds ( throwing a few exceptions on purpose on areas I had no idea what to do
+- Learning how to launch the project (created a project launcher)
+- Might be useful https://stackoverflow.com/questions/14501562/dynamically-load-dll-from-android-assets-folder
 
 
 # Summary
