@@ -213,6 +213,19 @@ Made changes to OgvVideo player so that it would be availabe from Android (ie co
 - Learning how to launch the project (created a project launcher)
 - Might be useful https://stackoverflow.com/questions/14501562/dynamically-load-dll-from-android-assets-folder
 
+## 23rd June
+
+- Checked asset size restriction is not a problem
+- added the msbuild target so that it will copy files to /obj/ (to build the apk) linking won't work as the files need to be there
+
+To add data to the apk using a msbuild task that copies the data from DualityData folder (path dependency) to obj/ as the data needs to be present (linking is not enough)
+
+#25 June
+
+Made honourbound android sln (only contains coreplugin and gameplay core plugin) 
+I wasnt sure if removing the tests was a good idea, maybe It will bite me in my arse but... only one way to find out right?
+
+
 
 # Summary
 
