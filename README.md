@@ -1,7 +1,7 @@
 
 As you might or might not know to make [Onikira: Demon Killer](www.onikira.com) we use an engine called [Duality](http://duality.adamslair.net/) and a few weeks ago we started to port the runtime to android. 
-
-## Starting out
+## Documenting the port of Duality game engine
+### Starting out
 
 As we started we made a list of things that we needed to look at
 
@@ -224,6 +224,10 @@ To add data to the apk using a msbuild task that copies the data from DualityDat
 
 Made honourbound android sln (only contains coreplugin and gameplay core plugin) 
 I wasnt sure if removing the tests was a good idea, maybe It will bite me in my arse but... only one way to find out right?
+
+#26th June  
+
+Patching up the ogv video player because I am pretty sure we dont need to use it in production.
 
 
 
