@@ -229,10 +229,16 @@ I wasnt sure if removing the tests was a good idea, maybe It will bite me in my 
 
 Patching up the ogv video player because I am pretty sure we dont need to use it in production.
 
+Now trying to figure out how to load all assets and plugins and sounds and videos to a running android app.
 
+Some "fun errors"
 
+- on the android manifest the vesion number needs to be an integer  (there is also version name which seems to be the "real version number"
+- when debugging if you are inspecting something and the app crashes it is mostly the app if you see `Mono.Debugger.Soft.VMDisconnectedException:` it seems that that means that the error is on your side of the app
+- File.Exists always fails https://forums.xamarin.com/discussion/6286/file-exists-always-fails
 # Summary
 
 We are porting Duality runtime to Android, all the code is available on this [user][1] on the respective android-port branch of each repository. If you are interested in this and want to help or have questions, let us know.
 
 [1]:https://github.com/batbuild?tab=repositories
+         
