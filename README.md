@@ -225,7 +225,7 @@ To add data to the apk using a msbuild task that copies the data from DualityDat
 Made honourbound android sln (only contains coreplugin and gameplay core plugin) 
 I wasnt sure if removing the tests was a good idea, maybe It will bite me in my arse but... only one way to find out right?
 
-#26th June  
+### 26th June  
 
 Patching up the ogv video player because I am pretty sure we dont need to use it in production.
 
@@ -233,13 +233,32 @@ Now trying to figure out how to load all assets and plugins and sounds and video
 
 Some "fun errors"
 
-- on the android manifest the vesion number needs to be an integer  (there is also version name which seems to be the "real version number"
-- when debugging if you are inspecting something and the app crashes it is mostly the app if you see `Mono.Debugger.Soft.VMDisconnectedException:` it seems that that means that the error is on your side of the app
+- On the android manifest the vesion number needs to be an integer  (there is also version name which seems to be the "real version number"
+- When debugging if you are inspecting something and the app crashes it is mostly the app if you see `Mono.Debugger.Soft.VMDisconnectedException:` it seems that that means that the error is on your side of the app
 - File.Exists always fails https://forums.xamarin.com/discussion/6286/file-exists-always-fails
-- 
+
+### 27th and 28th June
+
+- realized some changes to duality hadn't been merged (from Andrew's branch) so that was merged
+- File cache created on start-up very slow , 5 seconds for 12 files :( 
+- GC pauses for 1ms , this will probably be a problem
+- Fix mipmap problem that made rendering not work correctly
+- FileHelper abstraction
+
+Rendering with mipmaps problem 
+[mipmap problem](http://i.imgur.com/KgYwoz1.jpg)
+
+rendering 
+[Imgur](http://i.imgur.com/A5lCX2x.jpg)
 
 
+### 29th June
 
+A few days ago I had created a solution that will server as the place to collect all content and plugins .
+This solution would have an MSBUILD task that will collect content (Data folder in Duality) from a location and other similar things (sounds, videos, etc) from other suitable locations package it and deply the application to the console
+The problem with this is that the mdbuild task is very slow so this workflow might be acceptable for the build server tho not so much for the testing and running of the game. (even with the flag to avooid unchanged files)
+
+There is a good explanation [at Infinite Space blog](http://www.infinitespace-studios.co.uk/general/etc1-compressed-texture-asset-pipeline-for-xamarin-android/) about it.
 https://gist.github.com/tylerchesley/6198074
 
 # Summary
