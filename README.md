@@ -246,10 +246,10 @@ Some "fun errors"
 - FileHelper abstraction
 
 Rendering with mipmaps problem 
-[mipmap problem](http://i.imgur.com/KgYwoz1.jpg)
+![mipmap problem](http://i.imgur.com/KgYwoz1.jpg)
 
 rendering 
-[Imgur](http://i.imgur.com/A5lCX2x.jpg)
+![Imgur](http://i.imgur.com/A5lCX2x.jpg)
 
 
 ### 29th June
