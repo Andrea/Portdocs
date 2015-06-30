@@ -260,6 +260,16 @@ The problem with this is that the mdbuild task is very slow so this workflow mig
 
 There is a good explanation [at Infinite Space blog](http://www.infinitespace-studios.co.uk/general/etc1-compressed-texture-asset-pipeline-for-xamarin-android/) about it.
 https://gist.github.com/tylerchesley/6198074
+Fmod spike now copies the project from assets to somewhere in the drive (I am using SpecialFolders.Personal, is this a good idea?) and it is all working .. or at least I am playing sounds ...yay!
+
+### 30th June
+
+Today I 
+- ...made it so the game project will have a post build step in the android project similar to the one on the pc project where the binaries are copied to a specific folder
+- ..streamlined the fmod spike and started to try to add it to the launcher project, however I hit a problem with dependecies :( 
+    - at the start I thought I didn't have the correct files, so I checked that ( there was only one asssembly that wasn't following the nameing convention and that was a little confusing, but now that is sorted)
+    - checked that the assemblies where marked `AndroidAssets` and calling load for each of them results on a series of errors: FileNotFoundException :( 
+    
 
 # Summary
 
