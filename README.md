@@ -271,6 +271,24 @@ Today I
     - checked that the assemblies where marked `AndroidAssets` and calling load for each of them results on a series of errors: FileNotFoundException :( 
     
 
+### 1st and 2nd July
+
+The problem today and yesterday has been about loading stuff, at some point I had a problem with Fmod not loading the required *.so because some of the `DllImport`where not poninting to the correct place so code like this was needed in fmod and fmod_event
+
+```CSharp
+#if WIN64
+        public const string dll    = "fmod_event64.dll";
+#elif __ANDROID__
+		public const string dll = "libfmodevent";
+#else
+		public const string dll = "fmod_event.dll";
+#endif
+```
+
+the it was time to load resources, and we are copying both plugins and fmod stuff to the local disk, Dean did advice us against this, but couldn't find a workaround , anyway, when copying all there we stil need to do Assembly load to load th  plugins. 
+In Duality there is a good few places where `Directory.EnumerateFiles` with pattern is used, so I had to implenet something like this for our cache
+I am sure there is more to do regarding loading resources, however at the moment game plugins are loading and that is pretty cool.
+
 # Summary
 
 We are porting Duality runtime to Android, all the code is available on this [user][1] on the respective android-port branch of each repository. If you are interested in this and want to help or have questions, let us know.
