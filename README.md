@@ -289,6 +289,28 @@ the it was time to load resources, and we are copying both plugins and fmod stuf
 In Duality there is a good few places where `Directory.EnumerateFiles` with pattern is used, so I had to implenet something like this for our cache
 I am sure there is more to do regarding loading resources, however at the moment game plugins are loading and that is pretty cool.
 
+## 3rd July
+
+- Adding missing default resources 
+- removed some dependecies from nuget packages
+- Added font rendering :)
+ 
+## 4th July
+
+Fixed some bugs that helped getting music playing via FMod, this also meant that the main plugins (ie from the game) are working, or at least the types are loading and there are no errors when that is running. However when the  song is playing the cats are not bounding
+
+## 5th of july
+
+So there is a problem. It seems to be the performance but as always , verification is needed. So there are a few otpions whern it comes to debug android
+
+- NVidia Tegra system profiler 2.2 : in par with other (pretty aewsome) NVidia tools tho it doesn't point to code (it ponts to the so)
+- Xamarin profiler: it is an ealy stage of this product and it shows, (crashed on me about 20 times ) and sometimes it will report 0 time 
+
+[0 time ](http://i.imgur.com/0yPz4Tqm.png)
+then the other option is to use Duality profiler, but when I went to try that, we didn't have the default fonts... adding that :|
+
+
+
 # Summary
 
 We are porting Duality runtime to Android, all the code is available on this [user][1] on the respective android-port branch of each repository. If you are interested in this and want to help or have questions, let us know.
