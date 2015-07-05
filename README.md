@@ -306,7 +306,7 @@ So there is a problem. It seems to be the performance but as always , verificati
 - NVidia Tegra system profiler 2.2 : in par with other (pretty aewsome) NVidia tools tho it doesn't point to code (it ponts to the so)
 - Xamarin profiler: it is an ealy stage of this product and it shows, (crashed on me about 20 times ) and sometimes it will report 0 time 
 
-[0 time ](http://i.imgur.com/0yPz4Tqm.png)
+![0 time ](http://i.imgur.com/0yPz4Tqm.png)
 then the other option is to use Duality profiler, but when I went to try that, we didn't have the default fonts... adding that :|
 
 
