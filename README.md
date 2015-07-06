@@ -307,7 +307,25 @@ So there is a problem. It seems to be the performance but as always , verificati
 - Xamarin profiler: it is an ealy stage of this product and it shows, (crashed on me about 20 times ) and sometimes it will report 0 time 
 
 ![0 time ](http://i.imgur.com/0yPz4Tqm.png)
-then the other option is to use Duality profiler, but when I went to try that, we didn't have the default fonts... adding that :|
+then the other option is to use Duality profiler, but when I went to try that, we didn't have the default fonts... 
+- Added default font, thou they seem to have some sort of dependency on a checkerboard texture
+- Adding default text
+
+Video player with OGV notes (from Andrew)
+   - found a repo here https://github.com/jhotovy/android-ffmpeg that was all ready to go.
+    - Installed MinGW and MSYS.
+    - Had to change Project\jni\settings.sh to point to NDK directory.
+    - Added --toolchain=arm-linux-androideabi-4.9 --system=windows-x86_64 to the Project\jni\create_toolchain.sh script
+    - ./configure and ./make for each of ogg, vorbis, and theora
+
+Compile TheoraPlay against Android versions of libogg, libvorbis, and libtheora
+    - found anroid-cmake here https://github.com/taka-no-me/android-cmake 
+
+
+### 6th July
+
+- Revise the default pixmap problem,
+- continue profiling to achieve stable framerate
 
 
 
