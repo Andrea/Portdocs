@@ -327,7 +327,15 @@ Compile TheoraPlay against Android versions of libogg, libvorbis, and libtheora
 - Revise the default pixmap problem,
 - continue profiling to achieve stable framerate
 
+### 7th July
 
+- finished the script that builds PC and Androidn builds of the assemblies for dualitySCripts (for both C# and F#) :D
+
+### 8th July
+
+- there was actually a problem left on the script (ie show errors when the scripts should fail) 
+- Created a MsBuild task to go over all the files and create a record on text 
+- use the file as a cache
 
 # Summary
 
