@@ -336,6 +336,12 @@ Compile TheoraPlay against Android versions of libogg, libvorbis, and libtheora
 - there was actually a problem left on the script (ie show errors when the scripts should fail) 
 - Created a MsBuild task to go over all the files and create a record on text 
 - use the file as a cache
+- Andrew got the video integration using OGV  working :D (running on the console)
+### 9th July 
+
+- use file as the cache
+- performance
+- andrew on RenderTargets (maybe)
 
 # Summary
 
