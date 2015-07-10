@@ -339,9 +339,13 @@ Compile TheoraPlay against Android versions of libogg, libvorbis, and libtheora
 - Andrew got the video integration using OGV  working :D (running on the console)
 ### 9th July 
 
-- use file as the cache
+- use file as the cache (down to 16ms from 5 seconds)
 - performance
-- andrew on RenderTargets (maybe)
+
+### 10th July
+
+Fixed ogv player build (so that I can depend on the packages)
+	
 
 # Summary
 
