@@ -346,6 +346,15 @@ Compile TheoraPlay against Android versions of libogg, libvorbis, and libtheora
 
 Fixed ogv player build (so that I can depend on the packages)
 	
+### 11th July
+
+- fixed bug on cache that prevented any file to be found as paths weren't normalized
+- everything is broken because reasons (...)
+
+### 12th July 
+
+It gets to the point where I am not sure if things are broken or just too slow... tho too slow is kind of broken too ...
+
 
 # Summary
 
