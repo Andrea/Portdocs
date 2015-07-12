@@ -354,6 +354,16 @@ Fixed ogv player build (so that I can depend on the packages)
 ### 12th July 
 
 It gets to the point where I am not sure if things are broken or just too slow... tho too slow is kind of broken too ...
+Anyway, today I was trying to put togheter everything that worked, I found a little problem on the AndroidHelper class (it wasn't creating a directory if there wasn't one, but now it is) anyway.. it seemed like things were slow but working on then
+ I thought it would be a good idea to integrate the input into Duality. 
+ 
+ The input is something we worked with about a month ago, it was really painful to get working and we knew there was some issues with it, namely lag, significant (a few seconds) lag.
+Imagine my surprise when I go to run the spike and it does not take controller input..at all.
+Hours debugging to try to find out what the hell is going on :(
+
+The input library lives in a *.jar specific to the manufacturer, and we patched togheter some jni so that the input with the controller worked. It is important to get this right because our game has rumble, and we got the controller rumbling before in our spike
+
+
 
 
 # Summary
