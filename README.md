@@ -363,6 +363,8 @@ Hours debugging to try to find out what the hell is going on :(
 
 The input library lives in a *.jar specific to the manufacturer, and we patched togheter some jni so that the input with the controller worked. It is important to get this right because our game has rumble, and we got the controller rumbling before in our spike
 
+At the same time, Andrew was working on fixing a bug on the IndexRenderer but got stuck for hours because he couldn't debug, after hours ... the solution was to uninstall Xamarin Studio and install the version I have running (he was on 5 somethihng I was in 4 something) as everything else was exactly the same on the two machines (including hardware) but I could debug and he couldn't.
+
 
 
 
