@@ -365,6 +365,54 @@ The input library lives in a *.jar specific to the manufacturer, and we patched 
 
 At the same time, Andrew was working on fixing a bug on the IndexRenderer but got stuck for hours because he couldn't debug, after hours ... the solution was to uninstall Xamarin Studio and install the version I have running (he was on 5 somethihng I was in 4 something) as everything else was exactly the same on the two machines (including hardware) but I could debug and he couldn't.
 
+### 23rd July
+
+It has been really hard to write here, between preassure to get the build of the game ready for publishers and some unforseen problems (like the input just not working) ...
+
+Anyway, in the days in between the last post and this one, it had become obvious that the scripts were not running, so as of today they do actually work, yay!!
+Other things that are done
+
+- Render targets run on android
+- scripts build to android somewhat reliably ( some of the problems of scripts not runnign came from there)
+
+
+I copied FSharp.Core from where xamarin is using it locally, i really hope that is cool :D
+
+The whole build seems to handle errors very poorly, tipical workflow would be that the failure reported is several layers disconnected from what the source of the problem is, for example, today I had a small samnple and tried running and this is what happened:
+
+* all assemblies (including dynamic assemblies ) loaded without errors, oninit method runs but screen is black
+* try to check is Scene.Update is running but I am not hitting a brekpoint
+* (head scartching... ) maybe the deubg dll is not there.. check and it is...
+* put a breakpoint in DualityApp.Update()  (see code below) and the debugger would just get to OnBeforeUpdate() and exit
+*
+```CSharp
+public static void Update()
+{
+	isUpdating = true;
+	Profile.TimeUpdate.BeginMeasure();
+
+	Time.FrameTick();
+	Profile.FrameTick();
+	VisualLog.UpdateLogEntries();
+	OnBeforeUpdate();   //<-- HERE
+	UpdateUserInput();
+	Scene.Current.Update();
+	//...
+```
+* turn on exceptions to see what is going on... a bunch of the "normal" exceptions appear but nothing telling, so I debug OnBeforeUpdate and realise 
+```CSharp
+private static void OnBeforeUpdate()
+{
+	foreach (CorePlugin plugin in plugins.Values) plugin.OnBeforeUpdate();
+}
+```
+* I realize our game, project code honourbound (the project is internally called honourbound, because it was the name of the game before some other game was released with that name :( ... ) was failing on a call to renderTargets, 
+* so, I relize that the resources with the render targets weren't there , add them
+* still doesn't work, relize that the textures are also not there... add them
+* for some reason when I debug the project it hangs after loading all render targets ... I see no errors so I tr just deploying without debugging (because why not) and it works, the script actually runs, I am half thinking that maybe it doesn't work that maybe there is some sort of trick that makes it look as if it did work, but hey, 
+
+
+I will leave it here for today because it is less depressing than that some of the other days...
 
 
 
