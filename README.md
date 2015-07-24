@@ -414,7 +414,19 @@ private static void OnBeforeUpdate()
 
 I will leave it here for today because it is less depressing than that some of the other days...
 
+### 24th July
 
+so today once again I try to launch the game, knowing full well it wont work but wondering what new and imaginative ways this will fail...
+So I created a new small sample that has a scene with a texureRenderer that after some time (via a script with some coroutines) transitions to another Scene. 
+
+But before that some quirks about working with Xamarin and Visual studio
+
+* if you are debugging on the device, everytime debugging on Xamarin Studio(from now on XS)  will be faster than VS.
+* if you are trying to debug a refernced assembly on XS good luck that doesn't work 
+* if you set some new keybindings, they tend to magically disapear. (i set some similar keybindings to the ones I used on VS and they key reverting to the original XS, this is *very annoying* bug)
+* 
+
+So far I managed the hang not only VS but also XS, going though the errors ....
 
 # Summary
 
