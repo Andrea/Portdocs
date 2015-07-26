@@ -427,6 +427,33 @@ But before that some quirks about working with Xamarin and Visual studio
 * 
 
 So far I managed the hang not only VS but also XS, going though the errors ....
+I decided to unplug the console...
+
+### 25th July
+
+Definetly a much better day, I started of by repluging the console, this made me think maybe I should restart everything [acumulated state and whatnot] and the hangs were gone, I wish I was joking, my sample with one scene with a script on it that waited for a few seconds and then transitioned to another screen worked :| I mean, this is great but also very un-helpful 
+
+So this is an up to date list of things to do
+
+* faster development by compying the content to the device (otherwise it takes a few *minutes* to be able to start debugging.
+* Compression related issues. There are areas of the game like tiles, and other content that have been zipped for performance however when I started the port, I simply avoided those areas, knowing that we will have to think about this later
+* Input. As of today not working at all. Also integrating it into Duality is necessary. Perhaps a layer of abstraction would be wise here.
+
+One important thing done today was to merge all latest changes to both Duality and the honourbound project , some of these changes should aid on performance.
+
+Today trying the input again. For some reason I think about trying it in the other console... because it feels as if maybe we have inadvertidly changed something , some original setting... so we pair the controller to the other console and tada, the input sample that was working...works. I notice that the simbol when pairing is different to what I get when I attach the controller to the console , and that we used to get this symbol before and not anymore ... so I try in the original console to unpair the controller (that is usable to move around the menu and the sample controller applicaiton that came preinstalled in the console) and pair it again, and run the sample that we wrote to find it working again!!! The problem was that the device was not propoerly (what does this actually mean?) paired.  Relif tho, at least now we can begin to understand how to deal with  input. The lag is still there as a problem to be solved. and in having this problem we read a lot of the code in the controller library provided with the console.
+
+At the moment Andrew is working on the compression related issues. Will add here when he is done
+
+
+### 26th of July
+
+I am thinking that attempting to integrate the input to Duality might make sense.
+
+
+
+
+
 
 # Summary
 
