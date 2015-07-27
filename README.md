@@ -448,7 +448,19 @@ At the moment Andrew is working on the compression related issues. Will add here
 
 ### 26th of July
 
-I am thinking that attempting to integrate the input to Duality might make sense.
+I am thinking that attempting to integrate the input to Duality might make sense. And we did, to that effect we 
+
+Android zip support
+* Wrote a wrapper to make ZipOutputStream, ZipInputStream, and ZipFile collectively resemble the ZipArchive class from .net 4.5. The class is called AndroidZipArchive. 
+* Documentation suggests that ZipFile is slow on first access because it builds an in-memory index of the contents of the zip. Since it's only used for random access to files, it isn't created when the AndroidZipArchive class is, but only when GetEntry is called for the first time
+* AndroidZipArchive.Entries uses ZipInputStream instead of ZipFile as that is supposedly faster for iterating through zip files.
+ * To support the .Net 4.5 ZipEntry.Open method when in 'write' mode required writing a simple (and minimally implemented!) custom stream implementation called ZipOutputStreamWriter that simply forwards writes to an internal ZipOutputStream instance.
+    - The game uses conditional compilation to pick the right IZipArchive implementation.
+
+###27th July
+
+Implemented the remaining keys for the controller , I am a  little concerned because it doesn't have an up or down, it is either on or off
+Bring everything togheter
 
 
 
